@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/App.css';
 const App = () => {
 
-  const handleInput = (event) =>{
+  const handleInput = (event) => {
     console.log(event);
   }
 
@@ -10,14 +10,14 @@ const App = () => {
   return (
     <div id="main">
       <label htmlFor='text-input'>Text Input:- </label>
-      <input id="text-input" type={'text'} onChange={(e)=>handleInput(e.target.value)} />
+      <input id="text-input" type={'text'} onChange={(e) => handleInput(e.target.value)} />
 
-      <br/>
-      <br/>
+      <br />
+      <br />
 
       <label htmlFor='num-input'>Number input</label>
-      <input id="num-input"  type={'number'} onChange={(e)=>handleInput(e.target.value)} />
-      <br/>
+      <input id="num-input" type={'number'} onChange={(e) => handleInput(e.target.value)} />
+      <br />
     </div>
   )
 }
